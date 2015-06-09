@@ -9,10 +9,10 @@ var Experigen =  {
 		
 		strings: {
 			windowTitle:     "Wug test",
-			connecting:		 "Connecting...",
-			loading:         "Loading...",
+			connecting:		 "Подключение...",
+			loading:         "Загрузка...",
 			soundButton:     "    ►    ",
-			continueButton:  "   continue   ",
+			continueButton:  "   Продолжить   ",
 			errorMessage:    "An error occurred. We apologize for the inconvenience.",
 			emptyBoxMessage: "Please supply your answer in the text box."
 		},
