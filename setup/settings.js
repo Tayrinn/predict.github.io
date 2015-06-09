@@ -1,7 +1,7 @@
 var Experigen =  {
 	settings: {
 
-		experimentName: "predict", // use only A-Z, a-z, 0-9
+		experimentName: "predict112233", // use only A-Z, a-z, 0-9
 		
 		databaseServer: "http://db.phonologist.org/",
 
