@@ -8,13 +8,13 @@ var Experigen =  {
 		online: true, // make sure you know what you're doing before changing this
 		
 		strings: {
-			windowTitle:     "Wug test",
+			windowTitle:     "Угадывание слов",
 			connecting:		 "Подключение...",
 			loading:         "Загрузка...",
 			soundButton:     "    ►    ",
-			continueButton:  "   Продолжить   ",
-			errorMessage:    "An error occurred. We apologize for the inconvenience.",
-			emptyBoxMessage: "Please supply your answer in the text box."
+			continueButton:  "   Далее   ",
+			errorMessage:    "Ошибка",
+			emptyBoxMessage: "Пожалуйста, заполните свой ответ в текстовое поле"
 		},
 		
 		audio: true,
