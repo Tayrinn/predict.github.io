@@ -12,7 +12,7 @@ var Experigen =  {
 			connecting:		 "Подключение...",
 			loading:         "Загрузка...",
 			soundButton:     "    ►    ",
-			continueButton:  "   Далее   ",
+			continueButton:  "   Дальше   ",
 			errorMessage:    "Ошибка",
 			emptyBoxMessage: "Пожалуйста, заполните свой ответ в текстовое поле"
 		},
