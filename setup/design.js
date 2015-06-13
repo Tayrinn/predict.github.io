@@ -11,8 +11,10 @@ Experigen.initialize = function () {
 	var right = Math.floor(items.length * (order + 1) / order_max) - 1
 	
     for(var i = left, count = 0; i < right; i++, count++) {  
-        items[i].text = items[i].id + ". " + items[i].text
+        //items[i].text = items[i].id + ". " + items[i].text
 		words.push(items[i].text.split(/\s*[ ]+\s*/))
+        result.push("Введите первое слово")
+		right_answer.push(words[count][0])
         result.push(words[count][0])
         for (var j = 1; j < words[count].length; j++) {
             right_answer.push(words[count][j])
