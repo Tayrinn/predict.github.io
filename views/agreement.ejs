@@ -11,15 +11,15 @@
 </p>
 <p>
 Мой возраст 
-<input type="text" name="year" value="" SIZE="30" MAXLENGTH="100" style="width: 30em;">
+<input id="idYear" type="text" name="year" value="" SIZE="30" MAXLENGTH="100" style="width: 30em;">
 </p>
 <p>
 Мой родной язык (языки, если вы с детства говорите на нескольких языках) 
-<input type="text" name="lang" value="" SIZE="30" MAXLENGTH="100" style="width: 30em;">
+<input id="idLang" type="text" name="lang" value="" SIZE="30" MAXLENGTH="100" style="width: 30em;">
 </p>
 <p>
 Мой пол 
-<select name="sex" style="width: 10em; position: absolute; left:12em; margin-top:-2px;">
+<select id="idSex" name="sex" style="width: 10em; position: absolute; left:12em; margin-top:-2px;">
 		<option value="none">Выберите</option>
 		<option value="male">Мужской</option>
 		<option value="female">Женский</option>
@@ -28,7 +28,7 @@
 	Каждую неделю на чтение "для себя" (не по заданию, не по работе) я трачу примерно  
 <br>
 
-<select name="time_in_a_week" style="width: 10em; position: absolute; left:12em; margin-top:-2px;">
+<select id="idTime" name="time_in_a_week" style="width: 10em; position: absolute; left:12em; margin-top:-2px;">
 		<option value="none">Выберите</option>
 		<option value="min10">10 минут</option>
 		<option value="min30">30 минут</option>
@@ -38,6 +38,31 @@
 	</select> 
 
 </p>
-<input type="button" value="   Дальше   " onClick="Experigen.recordResponse(this);">
+<script>
+function notEmpty() {
+	//Experigen.recordResponse(this);
+	var msg= "";
+	if (document.getElementById("idYear").value == "") {
+            msg +=  'Заолните возраст! \n';
+    }
+	if (document.getElementById("idLang").value == "") {
+            msg +=  'Заолните язык! \n';
+    }
+	if (document.getElementById("idSex").value == "none") {
+            msg +=  'Заолните пол! \n';
+    }
+	if (document.getElementById("idTime").value == "none") {
+            msg +=  'Заолните время чтения! \n';
+    }
+
+    if(msg) {
+        alert(msg);
+        return false;
+    }
+    else
+        Experigen.recordResponse(this);
+}
+</script>
+<input type="submit" value="   Дальше   " onClick="notEmpty()">
 
 </div>
