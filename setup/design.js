@@ -21,7 +21,7 @@ Experigen.initialize = function () {
 			var new_result = result[result.length - 1] + " " + words[count][j]
             result.push(new_result)
         }
-        //right_answer.push(i + ". __end__")
+        right_answer.push(words[count][words[count].length - 1])
         //result[result.length - 1] += "<br> Нажмите enter для продолжения..."
     }    
     
