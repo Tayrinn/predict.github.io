@@ -21,8 +21,8 @@ Experigen.initialize = function () {
 			var new_result = result[result.length - 1] + " " + words[count][j]
             result.push(new_result)
         }
-        right_answer.push(i + ". __end__")
-        result[result.length - 1] += "<br> Нажмите enter для продолжения..."
+        //right_answer.push(i + ". __end__")
+        //result[result.length - 1] += "<br> Нажмите enter для продолжения..."
     }    
     
     items = items.pairWith("item", result)
