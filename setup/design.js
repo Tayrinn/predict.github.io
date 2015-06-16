@@ -16,7 +16,7 @@ Experigen.initialize = function () {
         result.push("Введите первое слово")
 		right_answer.push(words[count][0])
         result.push(words[count][0])
-        for (var j = 1; j < words[count].length; j++) {
+        for (var j = 1; j < words[count].length - 1; j++) {
             right_answer.push(words[count][j])
 			var new_result = result[result.length - 1] + " " + words[count][j]
             result.push(new_result)
