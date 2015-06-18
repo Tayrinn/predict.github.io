@@ -1,18 +1,18 @@
 var Experigen =  {
 	settings: {
 
-		experimentName: "predict", // use only A-Z, a-z, 0-9
+		experimentName: "predict112233", // use only A-Z, a-z, 0-9
 		
 		databaseServer: "http://db.phonologist.org/",
 
 		online: true, // make sure you know what you're doing before changing this
 		
 		strings: {
-			windowTitle:     "Угадывание слов",
+			windowTitle:     "Wug test",
 			connecting:		 "Подключение...",
 			loading:         "Загрузка...",
 			soundButton:     "    ►    ",
-			continueButton:  "   Дальше   ",
+			continueButton:  "   Далее   ",
 			errorMessage:    "Ошибка",
 			emptyBoxMessage: "Пожалуйста, заполните свой ответ в текстовое поле"
 		},
@@ -21,7 +21,7 @@ var Experigen =  {
 		
 		progressbar: {
 			visible: true, 
-			adjustWidth: 6,
+			adjustWidth: 4,
 			percentage: false
 		},
 		

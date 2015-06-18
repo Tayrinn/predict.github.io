@@ -16,12 +16,12 @@ Experigen.initialize = function () {
         result.push("Введите первое слово")
 		right_answer.push(words[count][0])
         result.push(words[count][0])
-        for (var j = 1; j < words[count].length - 1; j++) {
+        for (var j = 1; j < words[count].length; j++) {
             right_answer.push(words[count][j])
 			var new_result = result[result.length - 1] + " " + words[count][j]
             result.push(new_result)
         }
-        right_answer.push(words[count][words[count].length - 1])
+        //right_answer.push(i + ". __end__")
         //result[result.length - 1] += "<br> Нажмите enter для продолжения..."
     }    
     
@@ -33,7 +33,9 @@ Experigen.initialize = function () {
 
 	this.addStaticScreen("intro.ejs")
 	this.addStaticScreen("agreement.ejs")
-    this.addBlock(block1);
+	this.addBlock(block1);
+	this.addStaticScreen("finalthanks.ejs")
+    
 	
     
 }

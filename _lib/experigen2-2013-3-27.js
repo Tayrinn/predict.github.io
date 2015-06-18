@@ -811,13 +811,14 @@ Experigen.new_progressbar = function () {
 	return { 
 		initialize : function() {
 			if (visible) {
-				$("#progressbar").html('<div id="progress_bar_empty"><img scr="_lib/js/spacer.gif" width="1" height="1" alt="" border=0></div><div id="progress_bar_full"><img scr="_lib/js/spacer.gif" width="1" height="1" alt="" border=0></div><div id="progress_text">&nbsp;</div>');
+				//$("#progressbar").html('<div id="progress_bar_empty"><img scr="_lib/js/spacer.gif" width="1" height="1" alt="" border=0></div><div id="progress_bar_full"><img scr="_lib/js/spacer.gif" width="1" height="1" alt="" border=0></div><div id="progress_text">&nbsp;</div>');
+				$("#progressbar").html('<div id="progress_bar_full"><img scr="_lib/js/spacer.gif" width="1" height="1" alt="" border=0></div><div id="progress_text">&nbsp;</div>');
 				this.advance();
 			}
 		},
 		advance : function () {
 			if (visible) {
-				$("#progress_bar_empty").width((that._screens.length-(that.position+1))*adjust +  "px");
+				//$("#progress_bar_empty").width((that._screens.length-(that.position+1))*adjust +  "px");
 				$("#progress_bar_full").width((that.position+1)*adjust + "px");
 				if (percentage) {
 					$("#progress_text").html( Math.floor(100*(that.position+1)/that._screens.length) + "%");
