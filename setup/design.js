@@ -30,7 +30,7 @@ Experigen.initialize = function () {
         }
 		original.push(items[i].text)
 		number.push(words[count].length)
-        right_answer.push(words[count][length - 1])
+        right_answer.push(words[count][words[count].length - 1])
         //result[result.length - 1] += "<br> Нажмите enter для продолжения..."
     }    
     
