@@ -31,11 +31,10 @@ Experigen.initialize = function () {
 		original.push(items[i].text)
 		number.push(words[count].length)
         right_answer.push(words[count][words[count].length - 1])
-        //result[result.length - 1] += "<br> Нажмите enter для продолжения..."
     }    
     
-    items = items.pairWith("item", result)
-    var block1 = [].concat(items)
+    var block1 = [].concat(result)
+			.pairWith("item", result)
             .pairWith("right_answer", right_answer)
             .pairWith("original", original)
             .pairWith("number", number)
